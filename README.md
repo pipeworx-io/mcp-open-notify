@@ -1,15 +1,17 @@
-# mcp-open-notify
+# @pipeworx/open-notify
 
-Open Notify MCP — ISS position + people in space
+Open Notify MCP — International Space Station current position + people currently in space. No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `iss_now` | Current latitude / longitude of the International Space Station. |
-| `astros` | People currently in space — name + craft (ISS / Tiangong / etc.). |
+- `iss_now()` — current ISS lat/lon
+- `astros()` — people currently in space (name + craft)
+
+## Data source
+
+`http://api.open-notify.org/` — the historic ISS-pass endpoint was retired in 2022; only `iss-now` and `astros` remain.
 
 ## Quick Start
 
@@ -25,7 +27,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -49,7 +51,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
