@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-open-notify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Open Notify MCP — ISS position + people in space",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-open-notify": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "open-notify"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-open-notify"
+    "url": "git+https://github.com/pipeworx-io/mcp-open-notify.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-5e93bbf2e8c8b08917893eae414fe5c9f6b0b2d3af3a01df21dbde5879221e05",
+    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
   }
 }
