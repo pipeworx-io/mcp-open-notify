@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-open-notify",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Open Notify MCP — ISS position + people in space",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-5e93bbf2e8c8b08917893eae414fe5c9f6b0b2d3af3a01df21dbde5879221e05",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-1ea2a521f8cd60b88f4a92610b021d98f7082bb52b08bc992af65212ba05f402",
+    "sourceCommit": "97740c6ee04c8acbfe7dddcacfde9e88ff2b9ca0"
   }
 }
